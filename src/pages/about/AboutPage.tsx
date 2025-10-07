@@ -9,7 +9,7 @@ import "./AboutPage.css";
  */
 const AboutPage: React.FC = () => {
   return (
-    <div>
+    <div >
       <h1>Sobre nosotros</h1>
       <h2>Conoce a nuestro equipo </h2>
     </div>

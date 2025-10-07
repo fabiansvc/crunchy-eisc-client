@@ -15,7 +15,7 @@ const HomePage: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="container-page">
+    <div>
       <h1>CrunchyEISC</h1>
       <h2>Anime y mucho más</h2>
       <button onClick={() => navigate("peliculas")}>Ver peliculas</button>
