@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+.container-page {
+  @apply h-lvh flex flex-col gap-4 justify-center items-center;
+}
+
+a {
+  @apply text-white hover:underline;
+}
+
+nav, footer {
+  @apply flex gap-8 bg-purple-900 justify-center p-4;
+}
+
+button {
+  @apply bg-purple-700 text-white py-2 rounded hover:bg-purple-800 w-32;
+}
+
+

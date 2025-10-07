@@ -10,9 +10,9 @@ import "./Footer.css";
  */
 const Footer: React.FC = () => {
   return (
-    <nav>
+    <footer className="footer flex-col gap-4">
       <Link to="/mapa-sitio">Mapa del Sitio</Link>
-    </nav>
+    </footer>
   );
 };
 
