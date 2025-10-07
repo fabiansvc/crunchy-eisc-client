@@ -10,9 +10,9 @@ import "./Footer.css";
  */
 const Footer: React.FC = () => {
   return (
-    <nav>
+    <footer>
       <Link to="/mapa-sitio">Mapa del Sitio</Link>
-    </nav>
+    </footer>
   );
 };
 
