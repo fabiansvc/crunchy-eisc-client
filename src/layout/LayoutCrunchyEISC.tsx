@@ -26,7 +26,7 @@ const LayoutCrunchyEISC: React.FC<LayoutCrunchyEISCProps> = ({ children }) => {
   return (
     <>
       <Navbar />
-      <main>{children}</main>
+      <main className="container-page">{children}</main>
       <Footer />
     </>
   );

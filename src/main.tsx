@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import RoutesCrunchyEISC from "./routes/RoutesCrunchyEISC.tsx";
-import "./index.css";
+import "./index.scss";
 
 /**
  * Ensures the root element exists before rendering the app.
