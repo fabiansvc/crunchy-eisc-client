@@ -9,10 +9,12 @@ import "./MoviePage.css";
  * @remarks
  * Extend this component to fetch and render movie cards or a grid.
  */
-const MoviePage: React.FC  = () => {
+const MoviePage: React.FC = () => {
   return (
-    <h1>Peliculas</h1>
-  )
-}
+    <div>
+      <h1>Peliculas</h1>
+    </div>
+  );
+};
 
-export default MoviePage
+export default MoviePage;

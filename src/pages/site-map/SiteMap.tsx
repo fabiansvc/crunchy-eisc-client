@@ -9,10 +9,12 @@ import "./SiteMap.css";
  * @remarks
  * Consider rendering a list of links that mirror your router configuration.
  */
-const SiteMap: React.FC  = () => {
+const SiteMap: React.FC = () => {
   return (
-    <h1>Mapa del sitio</h1>
-  )
-}
+    <div>
+      <h1>Mapa del sitio</h1>
+    </div>
+  );
+};
 
-export default SiteMap
+export default SiteMap;

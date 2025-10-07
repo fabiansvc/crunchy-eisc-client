@@ -11,7 +11,7 @@ const AboutPage: React.FC = () => {
   return (
     <div>
       <h1>Sobre nosotros</h1>
-      <p>Conoce a nuestro equipo </p>
+      <h2>Conoce a nuestro equipo </h2>
     </div>
   );
 };
