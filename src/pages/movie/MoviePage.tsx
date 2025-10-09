@@ -11,7 +11,7 @@ const MoviePage: React.FC = () => {
   const [videos, setVideos] = useState<any[]>([]);
 
   async function getData() {
-    const url = `${ import.meta.env.VITE_API_LOCAL_URL || import.meta.env.VITE_API_PROD_URL}/videos/popular`;
+    const url : string = `${ import.meta.env.VITE_API_LOCAL_URL}/videos/popular`;
 
     try {
       const response = await fetch(url);
