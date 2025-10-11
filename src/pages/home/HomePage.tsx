@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useCallback } from "react";
 import "./HomePage.css";
 import { useNavigate } from "react-router";
+import  useUserStore  from "../../stores/useUserStore";
 
 /**
  * Home (landing) page of the application.
@@ -13,12 +14,25 @@ import { useNavigate } from "react-router";
  */
 const HomePage: React.FC = () => {
   const navigate = useNavigate();
+  const {setUser} = useUserStore();
+
+  const handleLogin = useCallback(()=>{
+    const User = {
+      id: 1,
+      name: "John Doe",
+      email: "john.doe@example.com",
+      age: 25,
+    } 
+
+    setUser(User);
+    navigate("peliculas");
+  }, [setUser, navigate])
 
   return (
     <div>
       <h1>CrunchyEISC</h1>
       <h2>Anime y mucho más</h2>
-      <button onClick={() => navigate("peliculas")}>Ver peliculas</button>
+      <button onClick={handleLogin}>Ver peliculas</button>
     </div>
   );
 };

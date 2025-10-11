@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./MoviePage.scss";
+import useUserStore from "../../stores/useUserStore";
 
 /**
  * Movies listing page.
@@ -8,6 +9,8 @@ import "./MoviePage.scss";
  * @returns {JSX.Element} A heading for the movies section.
  */
 const MoviePage: React.FC = () => {
+  const {user} = useUserStore()
+
   const [videos, setVideos] = useState<any[]>([]);
 
   async function getData() {
@@ -38,7 +41,7 @@ const MoviePage: React.FC = () => {
   return (
     <div className="movie-page">
       <h1>Peliculas </h1>
-
+      <h2>{user?.name}</h2>
       <div>
         {
           videos && videos.map((video: any) =>

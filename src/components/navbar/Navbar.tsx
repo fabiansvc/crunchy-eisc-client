@@ -11,6 +11,7 @@ import "./Navbar.css";
  * Uses semantic <nav> and <a> (via Link) for keyboard and screen reader navigation.
  */
 const Navbar: React.FC = () => {
+  
   return (
     <nav>
       <Link to="/">Inicio</Link>
