@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
-import "./LayoutCrunchyEISC.css";
+import "./LayoutCrunchyEISC.scss";
 
 /**
  * Props accepted by {@link LayoutCrunchyEISC}.
@@ -26,7 +26,9 @@ const LayoutCrunchyEISC: React.FC<LayoutCrunchyEISCProps> = ({ children }) => {
   return (
     <>
       <Navbar />
-      <main className="container-page">{children}</main>
+      <main className="container-page">
+        {children}
+      </main>
       <Footer />
     </>
   );
